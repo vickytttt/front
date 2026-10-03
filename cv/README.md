@@ -22,18 +22,9 @@ cv/
 
 ## How to Run
 
-1. Open `index.html` in any modern web browser, or
-2. Serve the folder locally:
-
-```bash
-python3 -m http.server 8000
-```
-
-Then visit `http://localhost:8000`.
+Open `index.html` in any modern web browser.
 
 ## Technologies
 
 - HTML5
 - CSS3 (Flexbox, Grid, custom properties)
-
-> Deployment (GitHub Pages, Netlify, Vercel) is intentionally out of scope for this project.
