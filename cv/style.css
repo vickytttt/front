@@ -1,0 +1,267 @@
+/* ---------- Design tokens ---------- */
+:root {
+  --bg: #f4f5f7;
+  --page-bg: #ffffff;
+  --sidebar-bg: #1f2a37;
+  --sidebar-text: #e6e9ee;
+  --muted: #9aa6b2;
+  --accent: #4f9cff;
+  --text: #24292f;
+  --text-light: #5a6472;
+  --border: #e2e6ea;
+  --shadow: 0 6px 24px rgba(16, 24, 40, 0.08);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  padding: 24px;
+}
+
+.page {
+  max-width: 1040px;
+  margin: 0 auto;
+  background: var(--page-bg);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  display: flex;
+}
+
+/* ---------- Left sidebar ---------- */
+.sidebar {
+  flex: 0 0 320px;
+  background: var(--sidebar-bg);
+  color: var(--sidebar-text);
+  padding: 40px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.profile {
+  text-align: center;
+}
+
+.avatar {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid rgba(255, 255, 255, 0.15);
+  margin-bottom: 16px;
+  background: #334152;
+}
+
+.name {
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+.title {
+  margin-top: 4px;
+  color: var(--accent);
+  font-size: 0.98rem;
+  font-weight: 500;
+}
+
+.sidebar-heading {
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  font-size: 0.8rem;
+  color: var(--muted);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+}
+
+.contact-list,
+.skills-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.contact-list li {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--muted);
+}
+
+.contact-list a {
+  color: var(--sidebar-text);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
+}
+
+.contact-list a:hover {
+  color: var(--accent);
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skills-list li {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.skills-list li:hover {
+  background: rgba(79, 156, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+/* ---------- Right content ---------- */
+.content {
+  flex: 1 1 auto;
+  padding: 44px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+
+.content-heading {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 1rem;
+  color: var(--text);
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 18px;
+}
+
+.content-heading::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 40px;
+  height: 3px;
+  border-radius: 2px;
+  background: var(--accent);
+}
+
+.block p {
+  color: var(--text-light);
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 22px;
+  margin-bottom: 24px;
+  border-left: 2px solid var(--border);
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -6px;
+  top: 6px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.item-title {
+  font-size: 1.08rem;
+  font-weight: 600;
+}
+
+.item-sub {
+  color: var(--text-light);
+  font-size: 0.85rem;
+  margin: 3px 0 8px;
+}
+
+.item-org {
+  font-weight: 600;
+  color: var(--text);
+}
+
+.item-period {
+  color: var(--muted);
+}
+
+.item-details {
+  list-style: none;
+  padding-left: 0;
+}
+
+.item-details li {
+  position: relative;
+  color: var(--text-light);
+  font-size: 0.92rem;
+  margin-bottom: 5px;
+  padding-left: 18px;
+}
+
+.item-details li::before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .page {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    flex: none;
+    gap: 28px;
+  }
+
+  .content {
+    padding: 32px 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 12px;
+  }
+
+  .sidebar {
+    padding: 32px 20px;
+  }
+
+  .content {
+    padding: 28px 20px;
+  }
+
+  .avatar {
+    width: 130px;
+    height: 130px;
+  }
+}
