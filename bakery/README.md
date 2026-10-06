@@ -29,7 +29,7 @@ bakery/
 
 ## Run
 
-Open `bakery/index.html` in a browser
+Open `https://vickytttt.github.io/front/bakery/` in a browser
 
 ## Features
 

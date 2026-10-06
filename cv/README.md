@@ -22,7 +22,7 @@ cv/
 
 ## How to Run
 
-Open `index.html` in any modern web browser.
+Open `https://vickytttt.github.io/front/cv/` in any modern web browser.
 
 ## Technologies
 
