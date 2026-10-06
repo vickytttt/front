@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Sweet Crumb Bakery — fresh, handcrafted bread, pastries, and custom cakes baked daily in the heart of town." />
+  <title>Sweet Crumb Bakery — Fresh Daily</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Header / Navigation -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#home" class="brand">
+        <span class="brand__mark">🧁</span>
+        <span class="brand__name">Sweet Crumb</span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#products" class="nav__link">Products</a></li>
+          <li class="nav__item"><a href="#gallery" class="nav__link">Gallery</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+        <button class="nav__close" id="navClose" aria-label="Close menu">✕</button>
+      </nav>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Home / Hero -->
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="hero__eyebrow">Baked fresh every morning</p>
+          <h1 class="hero__title">Life is sweet, enjoy every crumb.</h1>
+          <p class="hero__text">
+            Handcrafted bread, flaky pastries, and custom cakes made from scratch
+            with simple, honest ingredients. From our oven to your table.
+          </p>
+          <div class="hero__actions">
+            <a href="#products" class="btn btn--primary">Our Products</a>
+            <a href="#contact" class="btn btn--ghost">Order a Cake</a>
+          </div>
+        </div>
+        <div class="hero__media">
+          <div class="hero__image">🥐</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about">
+      <div class="container about__inner">
+        <div class="about__media">
+          <div class="about__image">🍞</div>
+        </div>
+        <div class="about__content">
+          <p class="section__eyebrow">Our Story</p>
+          <h2 class="section__title">A family bakery with a big love for baking</h2>
+          <p>
+            Since 2004, Sweet Crumb has been waking up the neighbourhood with the smell
+            of fresh bread. We're a small team that believes in slow methods, quality
+            butter, and real fruit — no shortcuts, no preservatives.
+          </p>
+          <ul class="about__list">
+            <li>🌾 Sourced from local farmers</li>
+            <li>👩‍🍳 Made by hand, every single day</li>
+            <li>🎂 Custom cakes for your special moments</li>
+          </ul>
+          <a href="#about" class="btn btn--primary">More About Us</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products -->
+    <section id="products" class="products">
+      <div class="container">
+        <div class="section__head">
+          <p class="section__eyebrow">From the bakery</p>
+          <h2 class="section__title">Our favourites</h2>
+        </div>
+
+        <div class="products__filters" id="productFilters">
+          <button class="filter is-active" data-filter="all">All</button>
+          <button class="filter" data-filter="bread">Bread</button>
+          <button class="filter" data-filter="pastry">Pastries</button>
+          <button class="filter" data-filter="cake">Cakes</button>
+        </div>
+
+        <div class="products__grid" id="productGrid">
+          <article class="product-card" data-category="bread">
+            <div class="product-card__img">🥖</div>
+            <h3>Country Sourdough</h3>
+            <p>Crispy crust, soft interior, 24-hour ferment.</p>
+            <span class="product-card__price">$6.50</span>
+          </article>
+          <article class="product-card" data-category="pastry">
+            <div class="product-card__img">🥐</div>
+            <h3>Butter Croissant</h3>
+            <p>Flaky, golden, and made with real French butter.</p>
+            <span class="product-card__price">$3.75</span>
+          </article>
+          <article class="product-card" data-category="cake">
+            <div class="product-card__img">🎂</div>
+            <h3>Chocolate Layer Cake</h3>
+            <p>Rich cocoa layers with silky ganache.</p>
+            <span class="product-card__price">$42.00</span>
+          </article>
+          <article class="product-card" data-category="bread">
+            <div class="product-card__img">🍞</div>
+            <h3>Classic White Loaf</h3>
+            <p>Soft, sliceable, perfect for sandwiches.</p>
+            <span class="product-card__price">$5.00</span>
+          </article>
+          <article class="product-card" data-category="pastry">
+            <div class="product-card__img">🧁</div>
+            <h3>Vanilla Cupcake</h3>
+            <p>Light sponge topped with fluffy buttercream.</p>
+            <span class="product-card__price">$4.25</span>
+          </article>
+          <article class="product-card" data-category="cake">
+            <div class="product-card__img">🥧</div>
+            <h3>Seasonal Fruit Tart</h3>
+            <p>Buttery crust filled with vanilla custard.</p>
+            <span class="product-card__price">$18.00</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="gallery">
+      <div class="container">
+        <div class="section__head">
+          <p class="section__eyebrow">A peek inside</p>
+          <h2 class="section__title">Fresh out of the oven</h2>
+        </div>
+        <div class="gallery__grid">
+          <figure class="gallery__item"><span>🍩</span>
+            <figcaption>Fresh Donuts</figcaption>
+          </figure>
+          <figure class="gallery__item"><span>🥯</span>
+            <figcaption>Bagels</figcaption>
+          </figure>
+          <figure class="gallery__item"><span>🍪</span>
+            <figcaption>Oat Cookies</figcaption>
+          </figure>
+          <figure class="gallery__item"><span>🍰</span>
+            <figcaption>Cheesecake</figcaption>
+          </figure>
+          <figure class="gallery__item"><span>🥨</span>
+            <figcaption>Pretzel Buns</figcaption>
+          </figure>
+          <figure class="gallery__item"><span>🫓</span>
+            <figcaption>Flatbreads</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="faq">
+      <div class="container faq__inner">
+        <div class="faq__head">
+          <p class="section__eyebrow">Good to know</p>
+          <h2 class="section__title">Frequently asked questions</h2>
+        </div>
+        <div class="faq__list">
+          <details class="faq__item" open>
+            <summary>What hours are you open?</summary>
+            <p>We're open daily from 7:00 AM to 6:00 PM, and until 8 PM on weekends.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Do you take custom cake orders?</summary>
+            <p>Yes! Please give us at least 48 hours' notice and reach out through the contact form.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Are your products suitable for vegetarians?</summary>
+            <p>Most of our items are vegetarian and made with dairy. Please mention any allergies when ordering.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Do you offer delivery?</summary>
+            <p>We offer local pickup and same-day delivery within 10 km for orders over $40.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+      <div class="container contact__inner">
+        <div class="contact__info">
+          <p class="section__eyebrow">Come say hi</p>
+          <h2 class="section__title">Visit us or place an order</h2>
+          <ul class="contact__details">
+            <li><strong>Address</strong> 12 Baker Street, Sweet Town</li>
+            <li><strong>Hours</strong> Daily 7 AM – 8 PM</li>
+            <li><strong>Phone</strong> (555) 123-4567</li>
+            <li><strong>Email</strong> hi@sweetcrumb.example</li>
+          </ul>
+        </div>
+
+        <form class="contact__form" id="contactForm" novalidate>
+          <div class="field">
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name" placeholder="Jane Doe" required />
+            <span class="field__error" data-for="name"></span>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="jane@example.com" required />
+            <span class="field__error" data-for="email"></span>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell us what you'd like..." required></textarea>
+            <span class="field__error" data-for="message"></span>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+          <p class="contact__success" id="formSuccess" hidden>Thanks! Your message has been sent. 🧁</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="brand__mark">🧁</span>
+        <span class="brand__name">Sweet Crumb Bakery</span>
+        <p>Fresh, handcrafted, and made with love since 2004.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Footer navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <p class="footer__copy">© 2026 Sweet Crumb Bakery. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
