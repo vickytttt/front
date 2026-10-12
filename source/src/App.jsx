@@ -22,7 +22,7 @@ const data = {
     {
       name: 'Bakery website',
       desc: 'A simple bakery website with a menu and contact information.',
-      link: 'front/bakery/',
+      link: 'https://vickytttt.github.io/front/bakery/',
     },
     {
       name: 'Weather Dashboard',
