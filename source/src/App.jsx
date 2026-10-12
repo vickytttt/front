@@ -20,9 +20,9 @@ const data = {
       link: '#',
     },
     {
-      name: 'Task Manager',
-      desc: 'A to-do app for adding, editing, and marking tasks complete.',
-      link: '#',
+      name: 'Bakery website',
+      desc: 'A simple bakery website with a menu and contact information.',
+      link: 'front/bakery/',
     },
     {
       name: 'Weather Dashboard',
