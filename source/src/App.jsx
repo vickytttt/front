@@ -46,17 +46,17 @@ const data = {
     {
       when: '2023 — Present',
       role: 'Junior Frontend Developer',
-      company: 'Creative Studio GmbH',
+      company: 'Example company name',
       desc: 'Developed responsive web interfaces for client projects using React and Tailwind CSS.',
     },
     {
       when: '2022 — 2023',
       role: 'Frontend Intern',
-      company: 'Digital Labs UG',
+      company: 'Example 2 company name',
       desc: 'Assisted in building and testing modern web applications.',
     },
   ],
-  email: 'nameexample@example.com',
+  email: 'name.example@example.com',
   location: 'Berlin, Germany',
 };
 
