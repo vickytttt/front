@@ -1,0 +1,19 @@
+# Dependencies
+node_modules
+
+# Environment / secrets
+.env
+
+# Build output (goes to ../weather-db, not here — but ignore just in case)
+dist
+dist-ssr
+
+# Logs
+*.log
+npm-debug.log*
+
+# Editor / OS
+.DS_Store
+.vscode/**
+!.vscode/extensions.json
+.idea

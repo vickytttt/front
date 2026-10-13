@@ -16,7 +16,7 @@ const data = {
   projects: [
     {
       name: 'Responsive Landing Page',
-      desc: 'A single-page marketing site that works on every screen size.',
+      desc: 'A single-page portfolio website that works on every screen size.',
       link: '#',
     },
     {
@@ -27,14 +27,14 @@ const data = {
     {
       name: 'Weather Dashboard',
       desc: 'Shows the current weather and a 5-day forecast for a city.',
-      link: '#',
+      link: 'https://vickytttt.github.io/front/weather-db/',
     },
   ],
   education: [
     {
       when: '2020 — 2023',
       degree: 'B.Sc. in Computer Science',
-      school: 'Technical University of Berlin',
+      school: 'University name',
     },
     {
       when: '2023',
@@ -57,7 +57,7 @@ const data = {
     },
   ],
   email: 'name.example@example.com',
-  location: 'Berlin, Germany',
+  location: 'Sweden',
 };
 
 const nav = [
